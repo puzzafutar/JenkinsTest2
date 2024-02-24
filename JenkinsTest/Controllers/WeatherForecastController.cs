@@ -29,5 +29,16 @@ namespace JenkinsTest.Controllers
             })
             .ToArray();
         }
+
+        /// <summary>
+        /// Dummy teszt metódus
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet("TestMethodResult")]
+        public int TestMethodResult()
+        {
+            var obj = new Testable();
+            return obj.GetNum();
+        }
     }
 }
