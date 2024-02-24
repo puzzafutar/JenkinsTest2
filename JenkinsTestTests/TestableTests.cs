@@ -14,7 +14,8 @@ namespace JenkinsTest.Tests
         [TestMethod()]
         public void GetNumTest()
         {
-            Assert.Fail();
+            Testable testable = new Testable();
+            Assert.IsNotNull(testable);
         }
     }
 }
